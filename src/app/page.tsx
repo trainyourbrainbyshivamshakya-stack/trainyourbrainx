@@ -5,13 +5,29 @@ import styles from './page.module.css';
 export default function HomePage() {
   return (
     <main className={styles.main}>
+
+      {/* ── Hero Section ── */}
       <section className={styles.hero}>
-        <h1 className={styles.title}>Master DSA with deep clarity.</h1>
-        <p className={styles.tagline}>
-          Six core shapes. One way of thinking. Pick a topic to begin.
+        <p className={styles.heroEyebrow}>Train Your Brain</p>
+        <h1 className={styles.heroTitle}>
+          Stop Memorizing.<br />Start Thinking.
+        </h1>
+        <p className={styles.heroSubtitle}>
+          DSA the way your brain actually works — step by step, no gaps, no magic.
         </p>
+        <div className={styles.heroPills}>
+          <span className={styles.pill}>Think first. Code second.</span>
+          <span className={styles.pill}>Built for real learners.</span>
+          <span className={styles.pill}>From confusion to clarity.</span>
+        </div>
       </section>
 
+      {/* ── Divider ── */}
+      <div className={styles.divider}>
+        <span className={styles.dividerText}>Pick your input shape</span>
+      </div>
+
+      {/* ── 6 Shape Cards ── */}
       <section className={styles.grid}>
         {topics.map((topic) => (
           <Link
@@ -29,6 +45,7 @@ export default function HomePage() {
           </Link>
         ))}
       </section>
+
     </main>
   );
 }
