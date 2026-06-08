@@ -1,0 +1,59 @@
+/* ============================================
+   Canvas — full-page dark background
+   ============================================ */
+.canvas {
+  min-height: 100vh;
+  background-color: #0a0f1e;
+  background-image:
+    linear-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  color: #e5e7eb;
+  padding: var(--space-12) var(--space-6) var(--space-16);
+}
+
+/* ============================================
+   Page header
+   ============================================ */
+.header {
+  max-width: var(--max-width);
+  margin: 0 auto var(--space-12);
+}
+
+.backLink {
+  display: inline-block;
+  font-size: var(--text-sm);
+  color: #6b7280;
+  margin-bottom: var(--space-6);
+  transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--color-train);
+}
+
+.title {
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: var(--space-3);
+}
+
+.subtitle {
+  font-size: var(--text-lg);
+  color: #6b7280;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 640px) {
+  .title {
+    font-size: var(--text-3xl);
+  }
+
+  .canvas {
+    padding: var(--space-8) var(--space-4);
+  }
+}
