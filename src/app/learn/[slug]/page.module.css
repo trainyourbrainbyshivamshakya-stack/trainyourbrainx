@@ -1,0 +1,94 @@
+/* ============================================
+   Main
+   ============================================ */
+.main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-12) var(--space-6);
+}
+
+/* ============================================
+   Shape Header
+   ============================================ */
+.header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+  padding: var(--space-12) 0;
+}
+
+.iconWrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  margin-bottom: var(--space-6);
+}
+
+.icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+}
+
+.blurb {
+  font-size: var(--text-lg);
+  color: #6b7280;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ============================================
+   Problems Section
+   ============================================ */
+.problemsSection {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-10);
+}
+
+.sectionTitle {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+}
+
+.comingSoon {
+  font-size: var(--text-sm);
+  color: #9ca3af;
+  font-style: italic;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+@media (max-width: 640px) {
+  .main {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .header {
+    padding: var(--space-8) 0;
+  }
+
+  .iconWrap {
+    width: 64px;
+    height: 64px;
+  }
+
+  .icon {
+    font-size: 2rem;
+  }
+}
