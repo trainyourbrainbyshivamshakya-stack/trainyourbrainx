@@ -15,11 +15,13 @@ export default function NavBar() {
   return (
     <header className={cn(styles.navbar, isDarkPage && styles.navbarDark)}>
       <nav className={styles.nav}>
-        <Link
-          href="/"
-          className={cn(styles.logo, isDarkPage && styles.logoDark)}
-        >
-          TUB
+        <Link href="/" className={styles.logoLink}>
+          <img
+            // src="/White_Logo.png"
+            src="/web_whitelogo_blackBC.svg"
+            alt="TrainYourBrain Logo"
+            className={styles.logoImg}
+          />
         </Link>
 
         <div className={cn(styles.links, isDarkPage && styles.linksDark)}>

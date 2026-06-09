@@ -98,3 +98,15 @@
 .linksDark .link:hover {
   color: #e5e7eb;
 }
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoImg {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}

@@ -13,9 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TUB — Master DSA with Deep Clarity",
+  title: "TYB — Master DSA with Deep Clarity",
   description:
     "The clearest way to learn Data Structures and Algorithms. Two modes: read deeply, or train your brain visually.",
+  icons: {
+    icon: "/white_tab_logo.svg",
+  },
 };
 
 export default function RootLayout({
