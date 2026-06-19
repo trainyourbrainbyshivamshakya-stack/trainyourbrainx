@@ -64,7 +64,8 @@
 }
 
 .modeToggle:hover {
-  background: var(--color-border);
+  background: var(--color-train);
+  color: white;
 }
 
 .modeToggleActive {

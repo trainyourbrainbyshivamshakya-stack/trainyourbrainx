@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 3px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.cell {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  padding: 4px 5px;
+}
+
+.dots {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+}

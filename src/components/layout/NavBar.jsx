@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import styles from "./NavBar.module.css";
 export default function NavBar() {
   const pathname = usePathname();
-  const isMapPage = pathname === "/trainyourbrain";
+  const isMapPage = pathname === "/mindmap";
   const isDarkPage =
     isMapPage ||
     (pathname?.includes("/learn/") && pathname?.endsWith("/train"));
@@ -37,7 +37,7 @@ export default function NavBar() {
         </div>
 
         <Link
-          href="/trainyourbrain"
+          href="/mindmap"
           className={cn(
             styles.modeToggle,
             isMapPage && styles.modeToggleActive,

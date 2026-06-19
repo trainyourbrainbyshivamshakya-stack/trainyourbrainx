@@ -1,19 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import NavBar from "@/components/layout/NavBar";
+import { Nunito, Sour_Gummy } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const sourGummy = Sour_Gummy({
+  variable: "--font-sour-gummy",
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
-
 export const metadata = {
-  title: "TYB — Master DSA with Deep Clarity",
+  title: "TUB — Master DSA with Deep Clarity",
   description:
     "The clearest way to learn Data Structures and Algorithms. Two modes: read deeply, or train your brain visually.",
   icons: {
@@ -27,11 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>
-        <NavBar />
-        {children}
-      </body>
+    <html lang="en" className={`${nunito.variable} ${sourGummy.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

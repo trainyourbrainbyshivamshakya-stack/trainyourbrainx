@@ -1,0 +1,136 @@
+/* ============================================
+   Base Node
+   ============================================ */
+.node {
+  font-family: var(--font-sour-gummy);
+  position: relative;
+  width: 140px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.15));
+}
+/* ============================================
+   Title
+   ============================================ */
+.title {
+   position: relative;
+  z-index: 1;
+  font-family: var(--font-sour-gummy);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: inherit;
+  text-align: center;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+
+/* ============================================
+   Bullet Points
+   ============================================ */
+.points {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+.content {
+  margin: 0px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+.point {
+  font-size: 0.72rem;
+  color: inherit;
+  line-height: 1.4;
+  padding-left: 16px;
+  position: relative;
+  opacity: 0.9;
+}
+
+.point::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  font-size: 0.65rem;
+  top: 1px;
+}
+
+.pointLabel {
+  font-weight: 700;
+  color: inherit;
+}
+
+/* ============================================
+   Handle
+   ============================================ */
+.handle {
+  opacity: 0;
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  border: none;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.para {
+  margin: 0;
+  text-align: center;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  opacity: 0.95;
+}
+
+.code {
+  align-self: center;
+  text-align: center;
+  white-space: pre-wrap;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+  padding: 3px 10px;
+  line-height: 1.2;
+}
+
+.note {
+  text-align: center;
+  font-size: 0.68rem;
+  font-style: italic;
+  opacity: 0.75;
+  line-height: 1.45;
+}
+.list {
+  margin: 4px 0;
+  padding: 0 0 0 22px;
+  text-align: left;
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+.list li {
+  margin: 4px 0;
+}
+
+
+
+
+
